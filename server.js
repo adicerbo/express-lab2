@@ -12,3 +12,8 @@ app.get("/greeting/:name", (req, res) => {
 app.listen(port, function() {
     // console.log("hello")
 })
+
+
+app.get("/tip/:total/:tipPercentage", (req, res) => {
+    res.send(req.params.tipPercentage)
+});
